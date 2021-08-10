@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="container">
+
+        <h1>To-Do App</h1>
+
+        <div class="new-task-container box">
+
+            <label for="new-task">Add New Task</label>
+            <input type="text" id="new-task">
+            <button id="addTask">Add Task</button>
+
+        </div>
+
+        <!-- edit taks -->
+        <div class="new-task-container box" id="edit" style="display: none;">
+
+            <label for="new-task">Edit Task</label>
+            <input type="text" class="edit-task">
+            <button class="editTask">Edit Task</button>
+
+        </div>
+
+        <!-- end edit -->
+
+        <div class="todo-list box">
+
+            <h2>Incomplete Tasks</h2>
+            <ul>
+                <!-- <li><input type="checkbox"><label>Task Name</lable></li>
+                <li><input type="checkbox"><label>Task Name</lable></li>
+                <li><input type="checkbox"><label>Task Name</lable></li> -->
+            </ul>
+
+        </div>
+        <!--/todo-list-->
+
+        <div class="complete-list box">
+
+            <h2>Completed Tasks</h2>
+            <ul>
+                <li>Task Name <button class="delete">Delete</button></li>
+
+            </ul>
+
+
+        </div>
+        <!--/complete-list-->
+
+
+
+
+
+    </section>
+    <!--/container-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="code.js"></script>
+
+
+</body>
+
+
+</html>
